@@ -391,6 +391,12 @@ void displayNodeInsertionPage() {
     for (int i = 0; storeMessage[i] != '\0'; ++i) {
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, storeMessage[i]);
     }
+     glColor3f(1.0, 1.0, 1.0);  // White
+    glRasterPos2f(-0.5, -0.5);
+    const char* storeMessage2 = "click n to store the linked list";
+    for (int i = 0; storeMessage2[i] != '\0'; ++i) {
+        glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, storeMessage2[i]);
+    }
     printListWithLines(0.4);
 
     if (enteringValues) {
